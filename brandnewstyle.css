@@ -1,0 +1,103 @@
+<<<<<<< HEAD
+html {
+    background-color: lightgray;
+    font-family: "Times New Roman", serif;
+}
+
+h1 {
+    color: midnightblue;
+}
+
+h2 {
+    
+}
+
+h3 {
+    color: midnightblue;
+}
+
+body {
+    width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 0px;
+    margin-top: 0px;
+    text-align: center; 
+}
+
+img {
+    border: 1px solid darkgray;
+}
+
+li {
+    list-style: none;
+    padding-right: 40px;
+}
+
+table {
+    margin-left: 235px;
+    border: none;
+}
+
+td {
+    padding: 8px;
+    border: none;
+    text-align: left;
+}
+
+a {
+    text-decoration: none;
+    color: saddlebrown;
+}
+=======
+html {
+    background-color: lightgray;
+    font-family: "Times New Roman", serif;
+}
+
+h1 {
+    color: midnightblue;
+}
+
+h2 {
+    
+}
+
+h3 {
+    color: midnightblue;
+}
+
+body {
+    width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 0px;
+    margin-top: 0px;
+    text-align: center; 
+}
+
+img {
+    border: 1px solid darkgray;
+}
+
+li {
+    list-style: none;
+    padding-right: 40px;
+}
+
+table {
+    margin-left: 235px;
+    border: none;
+}
+
+td {
+    padding: 8px;
+    border: none;
+    text-align: left;
+}
+
+a {
+    text-decoration: none;
+    color: saddlebrown;
+}
+>>>>>>> dd978d6da388f01e71294a910cfec93374884308
