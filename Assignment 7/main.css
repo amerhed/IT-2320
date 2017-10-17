@@ -1,0 +1,23 @@
+.button1
+{
+	display : inline-block;
+	font-size : 14px;
+	text-align : center;
+	width : 30px;
+	height : 30px;
+	padding : 20px;
+	margin : 20px;
+	border : 2px solid darkblue;
+}
+
+.button2
+{
+	display : inline-block;
+	font-size : 14px;
+	text-align : center;
+	width : 30px;
+	height : 30px;
+	padding : 20px;
+	margin : 20px;
+	border : 2px solid darkblue;
+}
