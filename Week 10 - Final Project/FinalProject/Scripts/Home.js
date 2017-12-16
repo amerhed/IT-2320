@@ -1,37 +1,103 @@
-﻿var attempt = 3;
+﻿$(document).ready(function () {
 
-function validate()
-{
-    var username = document.getElementById("username").value;
-    var password = document.getElementById("password").value;
-    if (username == "Student" && password == "student123")
-    {
-        alert("Login Successful");
-        window.location = "accountinfo.html";
+    $(".btn-login").click(function () {
+
+        var userName = $(".usr-login-txt").val();
+
+        var password = $(".pass-login-txt").val();
+
+        if (userName.toLowerCase() == "TestTheUser" && password == "123abc") {
+
+            $(".SectionLog").hide();
+
+            $(".accountInfoScreen").show();
+
+        }
+
+    });
+
+    function ValidateEmail(mail, selector) {
+
+        if (/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(mail)) {
+
+            $(selector).text("");
+
+            return true;
+
+        }
+
+        $(selector).text("Please enter valid email");
+
         return false;
-    }
-    else
-    {
-        alert("Error: Invalid username or pasword.");
+
     }
 
-    
-}
+    $(".btn-create-account").click(function () {
 
-function validate_form()
-{
-    var username2 = document.getElementById("username2").value;
-    var password2 = document.getElementById("password2").value;
-    var email = document.getElementById("email").value;
-    var emailConfirm = document.getElementById("emailConfirm").value;
+        $(".errMsg-username").text("");
 
-    if ()
-    {
-        alert("Account Successfully Created");
+        $(".errMsg-password").text("");
+
+        var mail = $(".email-txt").val();
+
+        ValidateEmail(mail);
+
+        var repMail = $(".rep-email-txt").val();
+
+        ValidateEmail(repMail);
+
+        var userName = $(".usr-txt").val();
+
+        var password = $(".pass-txt").val();
+
+        if (userName.toLowerCase() == "testuser") {
+
+            $(".errMsg-username").text("User Name already taken.");
+
+        }
+
+        if (password.length < 6) {
+
+            $(".errMsg-password").text("Password must be greater than six character");
+
+        }
+
+    });
+
+    $(".rep-email-txt").keyup(function () {
+
+        var mail = $(this).val();
+
+        ValidateEmail(mail, ".errMsg-rep-email");
+
+    });
+
+    $(".email-txt").keyup(function () {
+
+        var mail = $(this).val();
+
+        ValidateEmail(mail, ".errMsg-email");
+
+    });
+
+});
+
+
+
+$.ajax({
+
+    type: "POST",
+
+    url: "/Home/AjaxMethod",
+
+    data: $('.user-txt').val(),
+
+    contentType: "application/json; charset=utf-8",
+
+    dataType: "json",
+
+    success: function (response) {
+
     }
 
-    else
-    {
-        alert("Error: Invalid Username, Password, or Email.");
-    }
-}
+});

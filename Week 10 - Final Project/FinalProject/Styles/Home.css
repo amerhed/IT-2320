@@ -1,1 +1,99 @@
-﻿
+﻿body {
+    width: 520px;
+    font-family: Calibri;
+    font-size: 12px;
+    margin: 0 auto;
+}
+
+h1 {
+    font-size: 16px;
+    font-weight: bold;
+    text-align: left;
+}
+
+p {
+    text-align: left;
+}
+
+.SectionContent {
+    border-radius: 5px;
+    border: 1px solid black;
+    padding: 20px;
+}
+
+.containerAccount {
+    border-radius: 2px;
+    border: 1px solid black;
+    padding: 20px;
+}
+
+.SectionLog {
+}
+
+.accountInfoScreen {
+    display: none;
+    padding-left: 40px;
+    padding-right: 40px;
+}
+
+    .accountInfoScreen hr {
+        height: 10px;
+        border: 0;
+        box-shadow: 0 15px 15px -15px #65ADBC inset;
+    }
+
+.ContainerLog hr {
+    height: 2px;
+    border: 0;
+    box-shadow: 0 15px 15px -15px black inset;
+}
+
+.btn-right {
+    float: right;
+}
+
+.errMsg {
+    color: red;
+}
+
+@media only screen and (max-device-width: 480px), only screen and (min-device-width: 560px) and (max-device-width: 1136px) and (-webkit-min-device-pixel-ratio: 2) {
+
+    body {
+        width: 300px;
+        font-family: Calibri;
+        font-size: 12px;
+        margin: 0 auto;
+    }
+
+    h1 {
+        font-family: Cambria;
+        font-size: 16px;
+        font-weight: bold;
+        text-align: center;
+    }
+
+    p {
+        font-family: Calibri;
+        font-size: 12px;
+        font-style: italic;
+        text-align: center;
+    }
+
+    .SectionContent {
+        border-radius: 10px;
+        border: 2px solid black;
+        padding: 10px;
+    }
+
+    .btn {
+        width: 100%;
+    }
+
+    footer {
+        text-align: center;
+    }
+
+    .accountInfoScreen .col-md-4 {
+        padding-bottom: 10px;
+    }
+}
